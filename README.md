@@ -1,36 +1,40 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Lightweight BC Incident Viewer
 
-## Getting Started
+## Overview
+This project is a lightweight, readable web application that displays road incidents in British Columbia using a list-based interface.
 
-First, run the development server:
+It is inspired by the older DriveBC experience and intentionally avoids heavy, map-centric interactions. The focus is on clarity, performance, and quickly surfacing important information.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Purpose
+The purpose of this project is to:
+- Build a clean, maintainable application using modern web tooling
+- Practice feature-based project organization
+- Emphasize server-side rendering and data-first design
+- Create a strong foundation for future expansion
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+This project is primarily a learning-focused exercise, with deliberate architectural decisions made along the way.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Current Features
+- Fetches real-time road incident data from the BC Open511 API
+- Displays incidents using a lightweight card-based layout
+- Server-side data fetching for fast initial load
+- Feature-scoped components, helpers, and configuration
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## To Do
+- Focus on active, major incidents
+- Sort incidents by most recently updated
+- Filter incidents by severity and status
+- Add incident detail pages using dynamic routing
+- Implement route-based views (e.g., Vancouver → Merritt)
+- Integrate camera and weather data along selected routes
+- Build a mobile version using React Native (practice and reuse)
 
-## Learn More
+## Tech Stack
+- Next.js (App Router)
+- TypeScript
+- React
+- Tailwind CSS
+- BC Open511 API
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Status
+This project is under active development and evolving alongside learning goals.

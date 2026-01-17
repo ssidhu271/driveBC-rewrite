@@ -1,3 +1,4 @@
+import Link from "next/link"
 import IncidentCard from "./components/IncidentCard"
 import getIncidents from "./libs/fetchData"
 
@@ -6,9 +7,14 @@ export default async function page() {
 
     return (
       <div>
-          {events.map((event:Open511Event) => (
-          <IncidentCard key={event.id} incident={event}/>
-        ))}
+          {events.map((event:Open511Event) => {
+
+            let cleanID:string = event.id.replace("drivebc.ca/", "");
+
+            return <Link href={`/incidents/${cleanID}`} key={event.id}><IncidentCard incident={event}/></Link>
+
+          }
+        )}
       </div>
     )
 }

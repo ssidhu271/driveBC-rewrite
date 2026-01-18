@@ -1,6 +1,6 @@
 import Link from "next/link"
 import IncidentCard from "./components/IncidentCard"
-import getIncidents from "./libs/fetchData"
+import { getIncidents } from "./libs/fetchData"
 
 export default async function page() {
     const events = await getIncidents()

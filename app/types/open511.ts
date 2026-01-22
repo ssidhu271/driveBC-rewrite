@@ -4,7 +4,9 @@ interface Open511Event {
     status:string,
     created:string,
     updated:string,
-    description:string
+    description:string,
+    severity:string,
+    event_type:string
 }
 
 interface Open511EventFullDetails {

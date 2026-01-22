@@ -1,5 +1,6 @@
 export const EVENTS_CONFIG= {
-    LIMITVALUE: 5,
+    EVENTLIMITVALUE: 5,
+    SPECIFICLIMITVALUE: 1,
     DATAFORMAT: 'json'
 }
 
